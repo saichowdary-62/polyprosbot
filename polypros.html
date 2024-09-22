@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Poly Pros Bot</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+            background: linear-gradient(to right, #1e3c72, #2a69ac);
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+        h1 {
+            font-size: 2.5em;
+            margin-bottom: 20px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+        }
+        p {
+            font-size: 1.2em;
+            max-width: 600px;
+            margin: 0 0 30px;
+            text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+        }
+        .button {
+            background-color: #ffcc00;
+            color: #333;
+            padding: 15px 30px;
+            text-align: center;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 1.2em;
+            transition: background-color 0.3s, transform 0.3s;
+            animation: pulse 0.5s infinite;
+        }
+        .button:hover {
+            background-color: #ffc107;
+            transform: scale(1.05);
+            animation: none; /* Stop pulsing on hover */
+        }
+        @keyframes pulse {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.05); }
+            100% { transform: scale(1); }
+        }
+        footer {
+            margin-top: 20px;
+            font-size: 0.9em;
+            color: rgba(255, 255, 255, 0.8);
+        }
+        @media (max-width: 600px) {
+            .button {
+                padding: 12px 24px;
+                font-size: 1em;
+            }
+            h1 {
+                font-size: 2em;
+            }
+            p {
+                font-size: 1em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>Welcome to Poly Pros Bot!</h1>
+    <p>Get important questions tailored to your branch and subject for all year students. Click the button below to start chatting with our bot on Telegram!</p>
+    <a class="button" href="https://t.me/PolyPros_bot" target="_blank">Chat with @PolyPros_bot</a>
+    <footer>
+        &copy; 2024 Poly Pros. All rights reserved.
+    </footer>
+</body>
+</html>
